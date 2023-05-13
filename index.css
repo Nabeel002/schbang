@@ -53,7 +53,7 @@ a {
 }
 
 .hero-image-container {
-    height: 31em;
+height: 36em;
     margin-top: 50px;
     margin-right: 50px;
 
@@ -207,6 +207,9 @@ margin-top: 80px;
     background-color: red;
 }
 @media only screen and (max-width:700px) {
+    .hero-content-wrapper {
+            text-align: center;
+        }
     .btn-cart{
             padding-bottom: 73px;
     }
@@ -284,10 +287,11 @@ margin-top: 80px;
 
     .content-holder {
         display: flex;
-        justify-content: center;
-        flex-direction: column;
-        margin-left: 25px;
-        margin-right: 25px;
+            justify-content: center;
+            flex-direction: column;
+            margin-left: 25px;
+            margin-right: 25px;
+            align-items: center;
     }
 
     .hero-content-wrapper {
