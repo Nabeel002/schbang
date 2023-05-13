@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body,
+html {
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+}
+
+#hamburger {
+    display: none;
+}
+
+#cross-icon {
+    display: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 25px;
+
+}
+
+#menu-container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.nav-links {
+    margin-right: 25px;
+}
+
+
+
+.hero {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5em;
+}
+
+.hero-image-container {
+    height: 31em;
+    margin-top: 50px;
+    margin-right: 50px;
+
+}
+
+.hero-content-wrapper {
+    width: 50ch;
+    line-height: 25px;
+}
+
+.primary-btn {
+    border: none;
+    background-color: rgb(230, 41, 41);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 20px;
+    color: white;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.image-max-cover {
+    height: 100%;
+    object-fit: fill;
+    width: 100%;
+}
+
+.content-holder {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 50px;
+
+}
+
+
+.subtext {
+    color: rgb(57, 55, 55);
+}
+
+footer {
+    border-top: 1px solid rgb(148, 147, 147);
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 50px;
+
+}
+
+
+.flex {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.flex a {
+    margin-bottom: 10px;
+}
+
+.flex h2 {
+    margin-bottom: 20px;
+}
+
+.latest-products {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+.cards-holder {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: 50px;
+    margin-right: 50px;
+    column-gap: 2em;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+
+}
+
+
+
+#cart-icon{
+    cursor: pointer;
+}
+
+.card {
+    height: 20em;
+}
+#cart{
+position: fixed;
+    right: 0;
+    top: 0;
+    width: 30%;
+    height: 100vh;
+    background-color: white;
+    border-left: 1px solid black;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 9999;
+}
+
+
+.cart-heading{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    top: 20px;
+    padding-left: 30px;
+}
+
+.cart-heading p{
+    font-size: 25px;
+    color: gray;
+}
+#cart-close{
+    position: absolute;
+        right: 40px;
+        bottom: 11px;
+        cursor: pointer;
+}
+ .product-holder{
+margin-top: 80px;
+    display: flex;
+    width: 49%;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 35px;
+ }
+
+ .product-image{
+    height: 5em;
+    width: 5em;
+ }
+.btn-cart{
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+    background-color: red;
+}
+@media only screen and (max-width:700px) {
+    .btn-cart{
+            padding-bottom: 73px;
+    }
+.product-holder{
+    margin-top: 80px;
+        display: flex;
+        width: 78%;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 17px;
+    }
+    #cart-close {
+                bottom: 6px;
+            font-size: 13px;
+
+        }
+    .cart-heading p {
+            font-size: 15px;
+            color: gray;
+        }
+
+    #cart {
+            position: fixed;
+            right: 0;
+            top: 0;
+            width: 75%;
+            height: 100vh;
+            background-color: white;
+            border-left: 1px solid black;
+            transform: translateX(100%);
+            transition: transform 0.5s ease-in-out;
+            display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+        }
+
+    #cart-icon{
+        margin-right: 20px;
+    }
+    .icon-wrapper{
+        display: flex;
+    }
+    .cards-holder {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 50px;
+        margin-right: 50px;
+        column-gap: 2em;
+        margin-top: 25px;
+        margin-bottom: 50px;
+        row-gap: 2em;
+
+
+    }
+
+
+    .card {
+        height: 10em;
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .content-holder {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .hero-content-wrapper {
+        width: auto;
+    }
+
+    #cross-icon {
+        display: block;
+    }
+
+    #hamburger {
+        display: block;
+    }
+
+    .hero {
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5em;
+
+    }
+
+    .hamburger {
+        height: 3px;
+        background-color: black;
+        margin: 5px;
+        width: 30px;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        margin: 25px;
+    }
+
+    #menu-container {
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: white;
+        border: 1px solid black;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in-out;
+
+}
+
+    .relative-wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #cross-icon {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+
+    }
+
+
+
+
+
+    .nav-links {
+        margin-bottom: 1em;
+    }
+
+}
